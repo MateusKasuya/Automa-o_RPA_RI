@@ -17,10 +17,8 @@ navegador.implicitly_wait(0.5)
 
 # Acessando a página WEB
 
-try:
+navegador.get('https://www.btgpactual.com/')
 
-    navegador.get('https://www.btgpactual.com/')
+navegador.find_element('xpath', '//*[@id="navbar"]/btg-pactual-menu/div/div[1]/div[2]/btg-menu-button/button').click()
 
-except Exception as e:
-
-    print('Ocorreu um erro:', e)
+navegador.find_element('xpath', '//*[@id="navbar"]/btg-pactual-menu/div/div[3]/a[2]').click()
