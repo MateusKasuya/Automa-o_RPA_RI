@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rpa-real-investor"
+version = "0.1.0"
+description = ""
+authors = ["Mateus Kasuya <mateusvbkasuya@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selenium = "^4.19.0"
+webdriver-manager = "^4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
